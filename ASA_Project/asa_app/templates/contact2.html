@@ -14,22 +14,21 @@
                   <div class="card-body">
                     <form class="forms-sample" method="post">
                       {% csrf_token %}
-                      {{ form.as_p }}
                       <div class="form-group">
                         <label for="exampleInputName1">Nom</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Nom">
+                        <input type="text" class="form-control" id="exampleInputName1" name="nom" placeholder="Nom">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail3">Adresse mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                        <input type="email" class="form-control" id="exampleInputEmail3" name="email" placeholder="Email">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputCity1">Sujet</label>
-                        <input type="text" class="form-control" id="exampleInputCity1" placeholder="Sujet">
+                        <input type="text" class="form-control" id="exampleInputCity1" name="sujet" placeholder="Sujet">
                       </div>
                       <div class="form-group">
                         <label for="exampleTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                        <textarea class="form-control" id="exampleTextarea1" name="message" rows="4"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary mr-2">Envoyer</button>
                       <button class="btn btn-dark">Annuler</button>

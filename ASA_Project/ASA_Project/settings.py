@@ -129,8 +129,9 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+#DEFAULT_TO_EMAIL = 'farimatawade25@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'f.wade3@isepdiamniadio.edu.sn'
-EMAIL_HOST_PASSWORD = 'dklkcvwgifygiprj'
+EMAIL_HOST_USER = 'farimatawade25@gmail.com'
+EMAIL_HOST_PASSWORD = 'uodxfnunhjgnpwdt'

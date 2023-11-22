@@ -29,8 +29,9 @@ class SuperUtilisateurForm(forms.ModelForm):
         fields = "__all__"
 
 class ConnexionForm(AuthenticationForm):
-    username = forms.EmailField(max_length=254, help_text='Required. Enter a valid email address.')
+    email = forms.EmailField(max_length=254, help_text='Required. Enter a valid email address.')
     password = forms.CharField(widget=forms.PasswordInput)
+    
 
 class ContactForm(forms.Form):
     nom = forms.CharField(label="Nom", max_length=100, required=True)

@@ -9,5 +9,6 @@ urlpatterns = [
     path('recommandation/', views.recommandation, name='recommandation'),
     path('contact/', views.contact, name='contact'),
     path('inscription/', views.inscription, name='inscription'),
-    path('connexion/', views.connexion, name='connexion')
+    path('connexion/', views.connexion, name='connexion'),
+    path('generer_rapport/', views.generer_rapport_powerbi, name='generer_rapport'),
 ]
